@@ -1,0 +1,15 @@
+{
+  "name": "tokyo_landingpage",
+  "version": "1.0.0",
+  "description": "Landing page for tokyo",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
+ 
