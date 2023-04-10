@@ -6,13 +6,13 @@ Este projeto tem como objetivo compartilhar conhecimento em HTML E CSS, com inic
 
 
 
-## Como usar/How to Use
+## Como usar/ How to Use
 
 Para utilizar este projeto, basta clonar o repositório em sua máquina local e abrir os arquivos HTML em seu navegador de preferência. Cada arquivo HTML contém o código necessário para reproduzir um projeto ou componente específico.
 
 *To use this project, simply clone the repository on your local machine and open the HTML files in your preferred browser. Each HTML file contains the necessary code to reproduce a specific project or component.*
 
-## Contribuições/Contributions
+## Contribuições/ Contributions
 
 Se você deseja contribuir com este projeto, sinta-se à vontade para criar pull requests ou abrir issues com sugestões de projetos e componentes para serem adicionados, melhorias nos códigos. 
 
