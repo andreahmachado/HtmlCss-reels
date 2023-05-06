@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0.8em 1.5em;
+    color: white;
+    background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+    border: none;
+    box-shadow: 0px 5px 5px rgba(102, 143, 255, 0.541) ;
+    letter-spacing: -1px;
+    border-radius: 2em;
+}
+  .btn:hover {
+    box-shadow: 0px 6px 6px rgba(102, 166, 255, 0.541);
+}
+  .btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(102, 166, 255, 0.541);
+}
+
