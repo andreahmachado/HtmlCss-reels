@@ -1,6 +1,6 @@
 # HTML CSS FROM REELS
 
-Este projeto tem como objetivo compartilhar conhecimento em HTML E CSS com iniciantes. Ele consiste em um conjunto de códigos que reproduzem diferentes projetos e componentes comumente utilizados em sites e aplicações web.
+Este projeto tem como objetivo adquirir e compartilhar conhecimento em HTML E CSS com iniciantes. Ele consiste em um conjunto de códigos que reproduzem diferentes projetos e componentes utilizados em sites e aplicações web.
 
 *This project aims to share knowledge in HTML and CSS with beginners. It consists of a set of codes that reproduce different projects and components commonly used in websites and web applications.*
 
