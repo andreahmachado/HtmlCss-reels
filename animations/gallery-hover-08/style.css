@@ -1,0 +1,34 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    width: 700px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+    padding: 3rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.2);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
