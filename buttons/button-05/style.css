@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.btn-shadow{
+    margin: 35px;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    border-radius: 7px;
+    border: none;
+    background-image: linear-gradient(to right,  #e436fb,  #36bdfb);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+   
+}
+
+.btn-shadow:hover {
+    box-shadow: rgba(198, 67, 238, 0.4) -5px 5px,
+                rgba(185, 46, 240, 0.3) -10px 10px,
+                0px 2px 2px #07529dd6;
+               
+    transform: translate(2px, -2px);
+}
+.btn-shadow:active {
+        transform: scale(0.9);
+}
+
+
+
+

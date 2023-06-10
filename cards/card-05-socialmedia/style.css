@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 100rem;
+    padding: 1rem;
+  
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1rem;
+}
+
+.card {
+    background-color:#262525;
+    color: #fff;
+
+}
+.title-large {
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+     color: beige;
+     transform: translateX(4rem);
+     transition: transform 2s;
+}
+.title-small {
+    margin-bottom: 1rem;
+}
+.description {
+    font-size: 1rem;
+    line-height: 1.2;
+} 
+
+.card:hover,
+.card-cta {
+background-color:#262525;
+}
+.card:hover,
+.card-title-large {
+    transform: translateX(-115);
+    color: #fff;
+}

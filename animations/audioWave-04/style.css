@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+.wave {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    width: 90px;
+    gap: 10px;
+}
+.wave span { 
+    width: 10px;
+    height: 10px;
+    background: #00ff00;   
+    border-radius:7px;
+    animation:sound 2.2s infinite ease-in-out;
+ }
+.wave span:nth-child(2) {   
+    animation-delay: 0.2s;
+}
+.wave span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+@keyframes sound{
+    0% {
+        height: 10px;
+        transform: scaleY(1);
+    }
+    25% {
+        height: 40px;
+        transform:scale(1.7);
+    }
+    50% {
+        height: 10px;
+        transform: scaleY(1);
+    }
+    75% {
+        height: 10px;
+        transform: scaleY(1);
+    }
+}

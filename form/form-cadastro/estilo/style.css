@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;   
+}
+.form-section{
+    background-color: rgb(3, 3, 47);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+}
+.logo { 
+    width:300px;
+    padding:15px;
+}
+.title {
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+#email,
+#password,
+#sign {
+    border-radius: 8px;
+    height: 45px;
+    text-align: center;
+    border: 1px solid #000000;
+    margin-bottom: 10px; 
+}
+ #sign {
+    background: linear-gradient(to bottom right,
+     #FFD700, #FFFF00);
+}
+#sign:active {
+    transform: scale(0.9);
+   }
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+    width: 360px;  
+}
+.form-section input {
+    font-size: 20px;
+}
+a {
+    color: #ffffff;
+    padding-right: 180px;
+}
+.image-section {  
+   background-image: url(../image/photo1.png);
+   background-size: cover;
+   background-color:  rgb(240, 226, 22);
+   width: 60%;
+ }
+.image-section p {
+    padding: 45px;
+    font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+    #content {
+        flex-direction: column;
+    }
+    .form-section {
+        width: 100%; height: 60%;  order: 2;
+    }
+    .image-section {
+        display: block; width: 100%; height: 40%;  
+        background-image: url(../image/celular.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .image-section p {
+        font-size: 18px;
+        padding: 25px 0 0 22px;      
+   }
+}

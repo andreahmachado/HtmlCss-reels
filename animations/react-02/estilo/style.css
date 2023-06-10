@@ -1,0 +1,65 @@
+
+:root {
+    --primary-color: #61DAFB;
+    --box-shadow: 0 0 10px var(--primary-color);
+    --circles-width: 14em;
+    --circles-height: 4em;
+    --circle-border: 0.7em solid #61DAFB;
+  }
+
+  body {
+    background-color:#0C1D2B;
+  }
+  
+  .logo-react {
+    width: 20vw;
+    height: auto;    
+    justify-items: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding:8em;
+    align-items: center;
+    animation: spin 14s infinite linear;
+    animation-delay: 1.5s;
+    padding:8em;
+   
+  }
+  
+  .circle {
+    height: var(--circles-height);
+    width: var(--circles-width);
+    position: absolute;
+    border-radius: 50%;
+    border: var(--circle-border);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .circle-1 {
+    transform: rotate(30deg);
+  }
+  
+  .circle-2 {
+    transform: rotate(-30deg);
+  }
+  
+  .circle-3 {
+    transform: rotate(90deg);
+  }
+  
+  .center {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

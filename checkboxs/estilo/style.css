@@ -1,0 +1,37 @@
+* {
+  margin:0;
+  padding: 0;
+}
+.slider-deslizar {
+  background: rgba(219, 216, 216, 0.988);
+  height: 30px;
+  width: 60px;
+  display: inline-block;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 2px rgb(86, 84, 84);
+}
+
+/*esconde a checkbox*/
+.checkbox-01 input {
+  display: none;
+}
+
+/*circulo acima do slider*/
+.slider-deslizar::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  transform: scale(0.9);
+  background: rgb(201, 52, 52);
+  border-radius: 30px;
+  transition: 0.4s;
+  box-shadow: inset 0px 0px 2px rgb(86, 84, 84);
+}
+
+/* Muda cor/posição do círculo após checkbox ser marcado */
+.checkbox-01 input:checked ~ .slider-deslizar::after{
+  background: rgb(25, 172, 86);
+  transform: scale(0.9) translate(33px);
+}

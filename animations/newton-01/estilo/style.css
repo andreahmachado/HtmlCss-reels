@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.pendulum-container {
+    --ball-size:50px;
+    --animation-speed:1.2s;
+    --ball-color:#424156;
+
+    width: 200px;
+    height: 75px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+    margin: 35px;
+}
+
+.pendulo-newton {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    transform-origin: center top;
+    position: relative;
+    align-items: center;
+}
+
+/*Criar as bolas*/
+.pendulo-newton::after {
+    content: "";
+    display: block;
+    width: var(--ball-size);
+    height: var(--ball-size);
+    border-radius: 50%;
+    background-color: var(--ball-color);
+    position: absolute; 
+}
+
+/*Animando a first and last ball*/
+.pendulo-newton:first-child {
+    animation: ball-first 1.2s linear infinite;
+}
+.pendulo-newton:last-child {
+    animation: ball-last 1.2s linear infinite;
+}
+
+@keyframes ball-first {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-out;
+       }
+    25% {
+        transform: rotate(70deg);
+        animation-timing-function: ease-in;
+        }
+    50% {
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+     }
+}
+@keyframes ball-last {
+
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+    50% {
+           transform: rotate(0deg);
+            animation-timing-function: ease-out;
+        }   
+    75% {
+        transform: rotate(-70deg);
+        animation-timing-function: ease-in;
+    }
+}
