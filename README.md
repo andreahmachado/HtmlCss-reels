@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# Landing-Page
-# EliteCake-landingPage
-=======
+
 ## HTML CSS FROM REELS
 *This project aims to share knowledge in HTML and CSS for beginners. It consists of a set of codes that reproduce different projects and components used in websites and web applications.*
 
