@@ -27,4 +27,3 @@ Para utilizar este projeto, basta clonar o repositório em sua máquina local e 
 
 
 
->>>>>>> a163e10bf31236c836e2a2411e1ae746e3d4e4c2
