@@ -1,5 +1,5 @@
-
-## HTML CSS FROM REELS
+# About 💡
+### HTML CSS FROM REELS
 *This project aims to share knowledge in HTML and CSS for beginners. It consists of a set of codes that reproduce different projects and components used in websites and web applications.*
 
 ✌🏻 Este projeto tem como objetivo adquirir e compartilhar conhecimentos  (HTML e CSS) para iniciantes. Ele consiste em um conjunto de códigos que reproduzem diferentes projetos e componentes utilizados em sites e aplicações web.
