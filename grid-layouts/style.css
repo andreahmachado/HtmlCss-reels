@@ -38,7 +38,9 @@ h1,h2{
     text-transform: uppercase;
     padding-top: 2rem;
 }
-/* METHOD 2 : LINE NAME
+
+/* -------------------------------------------------------------------------
+        METHOD 2 : LINE NAME
         Usamos os colchetes [nome ].
         Então agora temos todas as nossas faixas de linhas quanto de colunas nomeadas, e é uma boa prática fazê-lo.
         Portanto, em um layout profissional,geralmente, sempre nomeamos nossas linhas de grade
@@ -87,7 +89,8 @@ h1{
     padding-top: 2rem;
 }
 
-/* METHOD 2 : LINE NAME
+/* -------------------------------------------------------------------------
+   METHOD 2 : LINE NAME
    Usamos a propriedade de áreas de modelo de grade.
    Escrevemos algumas strings e damos um nome a cada célula da grade.*/
     
@@ -133,8 +136,9 @@ h1{
             padding-top: 2rem;
         }
 
-        /* METHOD 3 : NAME GRID AREAS
-        Bom para construir layouts pequenos, pois é bem direto. Ex: algo como 4x4 ou 5x5.
+        /* -------------------------------------------------------------------------
+             METHOD 3 : NAME GRID AREAS
+             Bom para construir layouts pequenos, pois é bem direto. Ex: algo como 4x4 ou 5x5.
    */
     
    .container--{
@@ -210,9 +214,119 @@ casos de uso em que você realmente não sabe quantas linhas ou colunas haverá 
 Assim, você pode controlar a aparência da grade mesmo que não saiba quantos itens haverá nela.*/
 
     grid-auto-rows: 80px;
-
     grid-auto-flow: row;
     grid-auto-columns: .5fr;
 
-        
+/* align-itens por padrao sao configuradas para esticar,temos essas 2 propriedades para justificar na direcao horizontal */
+ 
+/*Align grid items to grid areas*/
+    align-items:center; /*stretch/ center/ start*/
+    justify-items: center;
+
+
+    .item {
+        padding: 10px;
+        background-color: rgb(105, 103, 106);
+        color: aliceblue;
+        font-size: 20px;
+        font-family: sans-serif;
+
     }
+    .item--4{
+        background-color: rgb(15, 3, 27);
+        grid-row: 2/spa 3;
+    }
+    .item--7{
+        background-color: rgb(53, 99, 86);
+        grid-column: 1/-1;
+    }
+}
+     /* -------------------------------------------------------------------------
+          min-content, max-content and the minmax()function
+   */
+
+   .container3{
+    background-color: bisque;
+    width: 500px;
+    margin: 30px auto;
+
+    display: grid;
+    /*grid-template-rows: repeat(2,150px);*/
+    /*grid-template-rows: repeat(2, min-content);*/
+    grid-template-columns:max-content 1fr 1fr min-content;
+
+    /* a função minmax () é apenas algo em que passamos dois valores e, em seguida,
+o CSS garante que a trilha sempre ficará entre esses dois valores.
+Então imagine que passamos para a função minmax () 100 pixels e 200 pixels para uma
+coluna, e assim a grade CSS irá garantir que não importa o que aconteça, esta coluna da
+grade ficará sempre entre 100 e 200 pixels de largura.*/
+ grid-template-rows: repeat(2,minmax(150px, min-content));
+  
+
+    .item{
+        background-color: rgb(32, 37, 36);
+        padding: 10px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    .item--1{background-color: brown};
+    .item--2{background-color: rgb(35, 165, 66)};
+    .item--3{background-color: rgb(42, 71, 165)};
+    .item--4{background-color: rgb(77, 6, 6)};
+    .item--5{background-color: rgb(138, 42, 165)};
+    .item--6{background-color: rgb(42, 165, 138)};
+    .item--7{background-color: rgb(85, 10, 43)};
+    .item--8{background-color: rgb(249, 2, 2)};
+
+   }
+      /* -------------------------------------------------------------------------
+         RESPONSIVE LAYOUTS WITH AUTO-FIT AND AUTO-FILL
+   */
+   .container4{
+    background-color: rgb(54, 2, 63);
+    width: 1000px;
+    margin: 30px auto;
+    color: aliceblue;
+    /*, o que o auto-preenchimento aqui faz é que ele cria automaticamente tantas
+    trilhas com a largura desejada que nós especificamos aqui como encaixadas no container.E então aqui vemos as 10 faixas da coluna. E por que 10 e não oito?
+    Bem, isso é porque o nosso contêiner tem 1.000 pixels,como você pode ver, e
+    nós especificamos que queríamos 100 colunas de pixels, e assim 1.000 dividido por 100 é, claro, 10.
+    E, portanto, cria 10 faixas de coluna.*/
+
+    display: grid;
+    grid-template-rows: repeat(2,minmax(150px, min-content));
+    grid-template-columns: repeat(auto-fill,100px);
+    /*, é como
+se ele tivesse criado apenas oito faixas,certo, mas na verdade,
+aqui embaixo, você pode ver que são apenas oito faixas de colunas.
+Então, ele cria essas faixasn e, em seguida, deixa esse espaço
+vazio aqui, que podemos então preencher, se quisermos.
+E essa é a grande diferença.
+Com o preenchimento automático, ele cria 10 colunas,
+então, como muitas delas cabem
+aqui, com o ajuste automático, ele ainda cria essas
+10 colunas, mas depois recolhe as
+que estão vazias para ter uma largura
+de zero*/
+    grid-template-columns: repeat(auto-fit, 100px);
+
+    
+    .item{
+        background-color: rgb(32, 37, 36);
+        padding: 10px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+   
+   .item--1{background-color: rgb(208, 52, 52)};
+   .item--2{background-color: rgb(35, 165, 66)};
+   .item--3{background-color: rgb(42, 71, 165)};
+   .item--4{background-color: rgb(77, 6, 6)};
+   .item--5{background-color: rgb(138, 42, 165)};
+   .item--6{background-color: rgb(42, 165, 138)};
+   .item--7{background-color: rgb(85, 10, 43)};
+   .item--8{background-color: rgb(249, 2, 2)};
+   
+   }
